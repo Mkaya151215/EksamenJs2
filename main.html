@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Manager</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Welcome, <span id="username"></span>!</h1>
+            <button id="logout-btn">Logout</button>
+        </div>
+        <div class="player-list">
+            <h2>Football Players</h2>
+            <div class="filters">
+                <input type="text" id="search-input" placeholder="Search by name">
+                <select id="team-filter">
+                    <option value="">All Teams</option>
+                </select>
+                <button id="search-btn">Search</button>
+            </div>
+            <select multiple id="players"></select>
+        </div>
+        <div class="my-team">
+            <h2>My Team</h2>
+            <ul id="my-team-list"></ul>
+            <button id="save-team-btn">Save Team</button>
+        </div>
+    </div>
+    <script src="crudService.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

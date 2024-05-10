@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Manager</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="radio-group">
+                <input type="radio" id="login" name="form-type" value="login" checked>
+                <label for="login">Login</label>
+                <input type="radio" id="register" name="form-type" value="register">
+                <label for="register">Register</label>
+            </div>
+            <div id="login-form">
+                <input type="text" id="login-username" placeholder="Username">
+                <input type="password" id="login-password" placeholder="Password">
+                <button id="login-btn">Login</button>
+            </div>
+            <div id="register-form" style="display: none;">
+                <input type="text" id="register-username" placeholder="Username">
+                <input type="password" id="register-password" placeholder="Password">
+                <button id="register-btn">Register</button>
+            </div>
+        </div>
+    </div>
+    <script src="crudService.js" ></script>
+    <script src="index.js" ></script>
+</body>
+</html>
