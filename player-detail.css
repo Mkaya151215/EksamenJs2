@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Poppins:wght@400;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10rem;
+    background-color: #f2f2f2;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.player-detail {
+    margin-top: 23px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.player-detail-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+#player-detail-title {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+#player-detail-image {
+    width: fit-content;
+    height: fit-content;
+    object-fit: cover;
+    margin-bottom: 15px;
+    display: block;
+}
+
+#player-detail-description {
+    line-height: 1.5;
+}
+
+#close-player-detail {
+    padding: 10px 20px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#close-player-detail:hover {
+    background-color: #ccc;
+}
+
+/* Popup Styles */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    /* Sørg for at popup-vinduet vises over andre elementer */
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    /* Legg til en subtil skygge for dybde */
+    max-width: 700px;
+    /* Definer en maksimal bredde for popup-vinduets innhold */
+    margin: 0 auto;
+    /* Sentrer innholdet i popup-vinduet horisontalt */
+    text-align: end;
+}
+
+/* Content Styles */
+.popup-input {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+#popup-image {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    display: block;
+    /* Sørg for at bildet fyller ut beholderens bredde */
+}
+
+#popup-description {
+    line-height: 1.5;
+    /* Forbedre lesbarheten med litt linjeavstand */
+}
+
+.btn-popup {
+    padding: 10px 20px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-popup:hover {
+    background-color: #ccc;
+    /* Legg til en sveveeffekt for lukkeknappen */
+}
